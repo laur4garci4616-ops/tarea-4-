@@ -1,0 +1,141 @@
+/* Variables de color */
+:root {
+    --fondo: #0a0a0a;
+    --acentos: #ff007f; /* Fucsia */
+    --texto: #ffffff;
+    --gris-suave: #1a1a1a;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--acentos);
+}
+
+.links a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--acentos);
+}
+
+/* Sección Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+h1 span {
+    color: var(--acentos);
+    text-shadow: 0 0 20px rgba(255, 0, 127, 0.5);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--acentos);
+    margin-top: 2rem;
+    object-fit: cover;
+}
+
+/* Tarjetas y Habilidades */
+.details {
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background: var(--gris-suave);
+    padding: 3rem;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: var(--acentos);
+    margin-bottom: 1rem;
+}
+
+.skill-icon {
+    width: 80px;
+    margin-top: 1rem;
+}
+
+/* Footer y Contacto */
+footer {
+    text-align: center;
+    padding: 5rem 10%;
+    background: linear-gradient(to top, #12000a, var(--fondo));
+}
+
+.social-links {
+    margin: 2rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--acentos);
+    color: var(--acentos);
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--acentos);
+    color: white;
+}
+
+.copy {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-top: 3rem;
+}
